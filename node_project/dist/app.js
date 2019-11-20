@@ -1,13 +1,11 @@
 "use strict";
 
-var _require = require('@lendingtree/sdk'),
-    LendingTree = _require.LendingTree;
-
 var express = require('express');
 
 var app = module.exports = express();
+
 app.get('/', function (req, res) {
-  console.log(LendingTree);
+  res.send('hi');
 });
 var PORT = process.env.PORT || 8080;
 app.listen(PORT, function () {
